@@ -1,0 +1,24 @@
+<template>
+    <lightning-card label="Service Form Phase 1">
+        <div class="slds-p-around_medium">
+
+            <lightning-input label="Full name" name="fullname" value={fullname} required onchange={handleInputChange}></lightning-input>
+            <template if:true={showNameError}>
+                <div class="slds-text-color_error">Full Name is required</div>
+            </template>
+
+            <lightning-input label="Phone" name="phone" type="tel" value={phone} required onchange={handleInputChange}></lightning-input>
+            <template if:true={showPhoneError}>
+                <div class="slds-text-color_error">Phone is required</div>
+            </template>
+
+            <lightning-combobox label="Service Type" name="serviceType" value={serviceType} options={serviceOptions} required onchange={handleInputChange} placeholder="Choose a service"></lightning-combobox>
+            <template if:true={showServiceError}>
+                <div class="slds-text-color_error">Service Type is required</div>
+            </template>
+
+            <lightning-button label="Submit Request" variant="brand" onclick={submitRequest}></lightning-button>
+
+        </div>
+    </lightning-card>
+</template>

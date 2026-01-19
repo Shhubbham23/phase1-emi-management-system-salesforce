@@ -1,0 +1,5 @@
+import { LightningElement, track } from 'lwc';
+
+export default class HtmlLoop extends LightningElement {
+    @track images=["https://t4.ftcdn.net/jpg/05/05/87/81/360_F_505878106_cj7ql5Djcvukb3kmnmtOrvSo5hL1yoYa.jpg","https://t3.ftcdn.net/jpg/03/91/01/80/360_F_391018013_1v95r7mvj3StoQttQYgPElCxb4nvCAh3.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnPqKgyGzNG8rdEJK-o7oZOovAhixNzGi8b_Ej-i2teovgvYCCyFwcJmqMIzr2Tetbh88&usqp=CAU","https://www.salesforce.com/content/dam/web/en_us/www/images/final-zoom-background-at-2x.png","https://www.salesforce.com/content/dam/web/en_us/www/images/get-more-from-digital-cnx21-zoom-background.png","https://wallpapers.com/images/hd/salesforce-background-u0eysycgpq5dzrgn.jpg","https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/10/Product-portfolio-image-Salesforce-Platform-10.18.24-1080x608-1.png?w=1024"];
+}
